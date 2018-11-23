@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="pin-pon">
+
+  <template>
+    <p>{{name}}</p>
+  </template>
+
+
+
+  <script>
+
+    class PinPon extends Polymer.Element {
+      static get template() { return "pin-pon" }
+
+      static get is() { return "pin-pon"; }
+
+      static get properties () {
+        return {
+          name: {
+            type: String,
+            value: "hola"
+          }
+        }
+      }
+    }
+
+    customElements.define(PinPon.is, PinPon);
+
+  </script>
+
+</dom-module>

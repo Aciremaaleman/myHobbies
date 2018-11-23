@@ -1,0 +1,55 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="./pin-pon.html">
+
+
+<dom-module id="my-view2">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle"> 📺 </div>
+      <h1>My second hobbie are games</h1>
+      <h2>I am a big fan of any kind of games from the version of computer games, consoles to even cell phones.</h2>
+      <p>Because of my fascination with the games I made one! This is a simple pin-pon game, but you need to destroy bricks and never touch the bottom of the screen. You have three lives to win and also an accountant who will carry your score.
+        Thanks to the guide in mozilla of developer in videogames with javascript I could take it like a guide to do it on Polymer.</p>
+    </div>
+
+    <div class="card">
+      <pin-pon></pin-pon>
+    </div>
+  </template>
+
+  <script>
+    class MyView2 extends Polymer.Element {
+      static get is() { return 'my-view2'; }
+      // static get properties() {
+      //   return {
+
+      //   }
+
+      // } 
+    }
+
+    window.customElements.define(MyView2.is, MyView2);
+  </script>
+</dom-module>
